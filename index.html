@@ -11,7 +11,7 @@
 
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Calibri', sans-serif;
       background-color: #ffffff;
       color: #333333;
       line-height: 1.6;
@@ -25,59 +25,60 @@
       max-width: 800px;
       margin: auto;
       background-color: #ffffff;
-      padding: 40px;
+      padding: 30px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       border-top: 5px solid #d32f2f;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem; /* Reducido tamaño de fuente */
       color: #d32f2f;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       font-weight: bold;
+      text-align: center;
     }
 
     .logo {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .logo img {
-      max-width: 150px; /* Ajusta el tamaño del logo */
+      max-width: 130px; /* Ajuste de tamaño del logo */
       height: auto;
     }
 
     .alert {
       background-color: #f9f9f9;
       border-left: 5px solid #d32f2f;
-      padding: 20px;
-      margin-bottom: 2rem;
+      padding: 15px;
+      margin-bottom: 1.5rem;
       border-radius: 5px;
-      font-size: 1.1rem;
+      font-size: 1rem; /* Reducido tamaño de fuente */
     }
 
     p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+      font-size: 1rem; /* Reducido tamaño de fuente */
+      margin-bottom: 1rem;
     }
 
     ul {
       padding-left: 1.5em;
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      font-size: 1rem; /* Reducido tamaño de fuente */
     }
 
     ul li {
-      margin-bottom: 0.8em;
+      margin-bottom: 0.6em;
     }
 
     .recommendation {
       background-color: #f4f4f4;
       border-left: 5px solid #388e3c;
-      padding: 20px;
+      padding: 15px;
       border-radius: 5px;
-      font-size: 1.1rem;
+      font-size: 1rem; /* Reducido tamaño de fuente */
     }
 
     .footer {
@@ -85,7 +86,7 @@
       font-size: 0.9rem;
       color: #888;
       text-align: center;
-      padding-top: 2rem;
+      padding-top: 1.5rem;
     }
 
     a {
@@ -98,13 +99,30 @@
       text-decoration: underline;
     }
 
+    .email {
+      color: #388e3c;
+    }
+
+    /* Estilos para pantallas más pequeñas */
     @media (max-width: 600px) {
       h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem; /* Ajuste más pequeño para móviles */
       }
 
       body {
-        padding: 15px;
+        padding: 10px; /* Reducción de padding en móviles */
+      }
+
+      .container {
+        padding: 20px; /* Reducción de padding */
+      }
+
+      .logo img {
+        max-width: 120px; /* Ajuste más pequeño en logo */
+      }
+
+      .alert, .recommendation, p, ul {
+        font-size: 0.9rem; /* Tamaño de texto más pequeño */
       }
     }
   </style>
@@ -116,7 +134,7 @@
       <img src="assets/images/bancatlan_ec_logo.jpg" alt="Logo de la Empresa">
     </div>
 
-    <h1 style="text-align: center;"> Alerta del Departamento de Seguridad de la Información </h1>
+    <h1> Alerta del Departamento de Seguridad de la Información </h1>
 
     <div class="alert">
       Has escaneado un código QR sin verificar su origen.  
@@ -136,11 +154,15 @@
       No escanees códigos QR de fuentes desconocidas.  
       Verifica siempre el origen del enlace antes de hacer clic.
     </div>
-    <div class="footer">
-      Campaña educativa sobre seguridad informática
-      <br>
-      <a> Banco Atlántida Ecuador  • Departamento de Seguridad de la Información</a>
-    </div>
+
+	<div class="footer">
+	  Campaña educativa sobre seguridad informática
+	  <br>
+	  <a href="mailto:seguridad@bancatlan.com" class="email">Monitoreos_SegInf@bancoatlantida.ec</a>
+	  <br>
+	  Banco Atlántida Ecuador  •  Departamento de Seguridad de la Información
+	</div>
+
   </div>
 </body>
 </html>
