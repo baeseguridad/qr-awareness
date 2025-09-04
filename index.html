@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Departamento de Seguridad de la Información </title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      line-height: 1.6;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 40px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      border-top: 5px solid #d32f2f;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #d32f2f;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo img {
+      max-width: 150px; /* Ajusta el tamaño del logo */
+      height: auto;
+    }
+
+    .alert {
+      background-color: #f9f9f9;
+      border-left: 5px solid #d32f2f;
+      padding: 20px;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.5em;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8em;
+    }
+
+    .recommendation {
+      background-color: #f4f4f4;
+      border-left: 5px solid #388e3c;
+      padding: 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+    }
+
+    .footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+      padding-top: 2rem;
+    }
+
+    a {
+      color: #d32f2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      body {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo de la empresa -->
+    <div class="logo">
+      <img src="assets/images/bancatlan_ec_logo.jpg" alt="Logo de la Empresa">
+    </div>
+
+    <h1 style="text-align: center;"> Alerta del Departamento de Seguridad de la Información </h1>
+
+    <div class="alert">
+      Has escaneado un código QR sin verificar su origen.  
+      Este es un ejercicio educativo para enseñarte sobre los riesgos de seguridad al escanear códigos QR de fuentes no confiables.
+    </div>
+
+    <p>Un código QR malicioso podría redirigirte a una página falsa que:</p>
+    <ul>
+      <li>Simule ser un sitio legítimo (phishing) para robar tus credenciales.</li>
+      <li>Solicite información sensible, como contraseñas o datos bancarios.</li>
+      <li>Recopile información sobre tu dispositivo, como ubicación, modelo y sistema operativo.</li>
+      <li>Instale malware o te redirija a contenido no deseado.</li>
+    </ul>
+
+    <div class="recommendation">
+      <strong>Recomendación:</strong><br>
+      No escanees códigos QR de fuentes desconocidas.  
+      Verifica siempre el origen del enlace antes de hacer clic.
+    </div>
+    <div class="footer">
+      Campaña educativa sobre seguridad informática
+      <br>
+      <a> Banco Atlántida Ecuador  • Departamento de Seguridad de la Información</a>
+    </div>
+  </div>
+</body>
+</html>
